@@ -208,7 +208,7 @@
 
         function updatePipes() {
             pipes.forEach((pipe, index) => {
-                pipe.x -= 10;
+                pipe.x -= 8;
                 if (pipe.x + pipe.width < 0) {
                     pipes.splice(index, 1);
                     score++;
