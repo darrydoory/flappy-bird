@@ -262,7 +262,7 @@
             if (event.code === "Space") {
                 if (!gameStarted) {
                     gameStarted = true;
-                    pipeInterval = setInterval(addPipe, 1600);
+                    pipeInterval = setInterval(addPipe, 100);
                 }
                 bird.velocity = bird.lift;
             }
