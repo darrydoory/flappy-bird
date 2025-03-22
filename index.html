@@ -66,7 +66,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 400px;
+        width: 300px;
         /* height: 60%; */
         height: fit-content;
     }
@@ -168,7 +168,7 @@
         const pipeBottomImg = new Image();
         pipeBottomImg.src = 'pipeBottom.png';
 
-        const bird = { x: 50, y: 200, width: 70, height: 50, gravity: 1.2, lift: -16, velocity: 0 };
+        const bird = { x: 50, y: 200, width: 55, height: 45, gravity: 1.2, lift: -14, velocity: 0 };
         let pipes = [];
         let score = 0;
         let highScore = localStorage.getItem('highScore') || 0;
@@ -208,7 +208,7 @@
 
         function updatePipes() {
             pipes.forEach((pipe, index) => {
-                pipe.x -= 8;
+                pipe.x -= 6;
                 if (pipe.x + pipe.width < 0) {
                     pipes.splice(index, 1);
                     score++;
